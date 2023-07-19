@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+body .container {
+  margin: auto;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: perspective(7000px) rotateY(15deg) rotateX(55deg) rotateZ(-40deg);
+}
+body .container .trigger {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+}
+body .container .trigger .phone {
+  position: relative;
+  border-radius: 20px;
+  height: 500px;
+  width: 250px;
+  box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.4);
+  transition: 0.5s ease-in-out;
+  margin: 100px;
+}
+body .container .trigger .phone .phone__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px 20px 0 0;
+}
+body .container .trigger .phone .phone__top::after {
+  content: "";
+  width: 35px;
+  height: 5px;
+  border-radius: 20px;
+}
+body .container .trigger .phone .phone__screen {
+  background-color: #f1f1f1;
+  padding: 40px 40px 10px;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  box-shadow: -1px 1px 0px #bcbcbc, -2px 2px 0px #bcbcbc, -3px 3px 0px #bcbcbc, -4px 4px 0px #bcbcbc, -5px 5px 0px #bcbcbc, -6px 6px 0px #bcbcbc, -7px 7px 0px #bcbcbc, -8px 8px 0px #bcbcbc;
+}
+body .container .trigger .pink .phone__top {
+  background: linear-gradient(to right, #e9a2b4, #f0d9df);
+  box-shadow: -1px 1px 0px #b68490, -2px 2px 0px #b68490, -3px 3px 0px #b68490, -4px 4px 0px #b68490, -5px 5px 0px #b68490, -6px 6px 0px #b68490, -7px 7px 0px #b68490, -8px 8px 0px #b68490;
+}
+body .container .trigger .pink .phone__bottom {
+  background: linear-gradient(to right, #edc7d2, #f0d9df);
+  box-shadow: -1px 1px 0px #d4afb7, -2px 2px 0px #d4afb7, -3px 3px 0px #d4afb7, -4px 4px 0px #d4afb7, -5px 5px 0px #d4afb7, -6px 6px 0px #d4afb7, -7px 7px 0px #d4afb7, -8px 8px 0px #d4afb7;
+}
+body .container .trigger .phone__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+}
+body .container .trigger .phone__bottom::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+body .container .trigger .phone__screen h2 {
+  font-weight: 100;
+  font-size: 80px;
+}
+body .container .trigger .phone__screen p {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+body .container .trigger .phone__screen h3 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1;
+}
+body .container .trigger .phone__screen h3 b {
+  font-weight: 500;
+}
+body .container .trigger .dots {
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 5px;
+}
+body .container .trigger .dots span {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+}
+body .container .trigger .dots span:nth-child(1) {
+  background-color: #ffae00;
+}
+body .container .trigger .dots span:nth-child(2) {
+  background-color: #ff8800;
+}
+body .container .trigger .dots span:nth-child(3) {
+  background-color: #fa3b5b;
+}
+body .container .trigger .phone__screen hr {
+  width: 30%;
+  background: linear-gradient(to right, #ffae00, #fa3b5b);
+  height: 1px;
+  border: none;
+  margin: 20px 0;
+}
+body .container .trigger .pink .phone__top::after {
+  background-color: #e888a3;
+}
+body .container .trigger .pink .phone__bottom::after {
+  background-color: #e888a3;
+}
+body .container .trigger .black .phone__top {
+  background: linear-gradient(to right, #333, #555);
+  box-shadow: -1px 1px 0px #333, -2px 2px 0px #333, -3px 3px 0px #333, -4px 4px 0px #333, -5px 5px 0px #333, -6px 6px 0px #333, -7px 7px 0px #333, -8px 8px 0px #333;
+}
+body .container .trigger .black .phone__bottom {
+  background: linear-gradient(to right, #333, #444);
+  box-shadow: -1px 1px 0px #333, -2px 2px 0px #333, -3px 3px 0px #333, -4px 4px 0px #333, -5px 5px 0px #333, -6px 6px 0px #333, -7px 7px 0px #333, -8px 8px 0px #333;
+}
+body .container .trigger .black .phone__top::after {
+  background-color: #111;
+}
+body .container .trigger .black .phone__bottom::after {
+  background-color: #111;
+}
+body .container .trigger .green .phone__top {
+  background: linear-gradient(to right, #283618, #606c38);
+  box-shadow: -1px 1px 0px #202c11, -2px 2px 0px #202c11, -3px 3px 0px #202c11, -4px 4px 0px #202c11, -5px 5px 0px #202c11, -6px 6px 0px #202c11, -7px 7px 0px #202c11, -8px 8px 0px #202c11;
+}
+body .container .trigger .green .phone__bottom {
+  background: linear-gradient(to right, #283618, #606c38);
+  box-shadow: -1px 1px 0px #202c11, -2px 2px 0px #202c11, -3px 3px 0px #202c11, -4px 4px 0px #202c11, -5px 5px 0px #202c11, -6px 6px 0px #202c11, -7px 7px 0px #202c11, -8px 8px 0px #202c11;
+}
+body .container .trigger .green .phone__top::after {
+  background-color: #111;
+}
+body .container .trigger .green .phone__bottom::after {
+  background-color: #111;
+}
+body .container .trigger .purple .phone__top {
+  background: linear-gradient(to right, rgb(107, 60, 176), #e5ddea);
+  box-shadow: -1px 1px 0px rgb(107, 60, 176), -2px 2px 0px rgb(107, 60, 176), -3px 3px 0px rgb(107, 60, 176), -4px 4px 0px rgb(107, 60, 176), -5px 5px 0px rgb(107, 60, 176), -6px 6px 0px rgb(107, 60, 176), -7px 7px 0px rgb(107, 60, 176), -8px 8px 0px rgb(107, 60, 176);
+}
+body .container .trigger .purple .phone__bottom {
+  background: linear-gradient(to right, rgb(107, 60, 176), #e5ddea);
+  box-shadow: -1px 1px 0px rgb(107, 60, 176), -2px 2px 0px rgb(107, 60, 176), -3px 3px 0px rgb(107, 60, 176), -4px 4px 0px rgb(107, 60, 176), -5px 5px 0px rgb(107, 60, 176), -6px 6px 0px rgb(107, 60, 176), -7px 7px 0px rgb(107, 60, 176), -8px 8px 0px rgb(107, 60, 176);
+}
+body .container .trigger .purple .phone__top::after {
+  background-color: rgb(92, 33, 180);
+}
+body .container .trigger .purple .phone__bottom::after {
+  background-color: rgb(92, 33, 180);
+}
+body .container .black:hover {
+  transform: translate(100px, 0px) scale(1.1);
+  box-shadow: -80px 80px 80px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+body .container .green:hover {
+  transform: translate(100px, 0px) scale(1.1);
+  box-shadow: -80px 80px 80px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+body .container .purple:hover {
+  transform: translate(100px, 0px) scale(1.1);
+  box-shadow: -80px 80px 80px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+body .container .pink:hover {
+  transform: translate(100px, -50px) scale(1.1);
+  box-shadow: -80px 80px 80px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}/*# sourceMappingURL=style.css.map */
